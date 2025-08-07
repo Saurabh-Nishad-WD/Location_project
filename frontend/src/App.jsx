@@ -1,9 +1,16 @@
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom"
+import Home_page from "./Pages/Home_page"
+
 
 function App() {
 
   return (
     <>
-    <div className="bg-red-300">Hello</div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home_page/>} />
+      </Routes>
+    </Router>
     </>
   )
 }
